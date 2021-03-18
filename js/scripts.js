@@ -1,3 +1,20 @@
+/*
+location behaviour starts here
+*/
+let dropdownBtn = document.querySelector('.menu-btn');
+let menuContent = document.querySelector('.menu-content');
+
+dropdownBtn.addEventListener('click',()=>{
+   if(menuContent.style.display===""){
+      menuContent.style.display="block";
+   } else {
+      menuContent.style.display="";
+   }
+})
+
+/*
+slide behaviour starts here
+*/
 var slideIndex = 0;
 carousel();
 
@@ -12,6 +29,10 @@ function carousel() {
   x[slideIndex-1].style.display = "block";
   setTimeout(carousel, 2000);
 }
+/*
+slide behaviour ends here
+*/
+
 
 /*
 nav bar behaviour starts
@@ -27,17 +48,3 @@ function navFunc() {
 /*
 nav bar behaviour ends
 */
-
-/*
-location behaviour starts here
-*/
-let dropdownBtn = document.querySelector('.menu-btn');
-let menuContent = document.querySelector('.menu-content');
-
-dropdownBtn.addEventListener('click',()=>{
-   if(menuContent.style.display===""){
-      menuContent.style.display="block";
-   } else {
-      menuContent.style.display="";
-   }
-})
