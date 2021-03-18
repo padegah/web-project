@@ -37,7 +37,22 @@
             </a>
         </div>
     </header>
-
+    <div class="space"></div>
+    <div class="ebank">
+        <form action="ebank.html" method="POST">
+            <h1>E-Banking</h1>
+            <div class="formcontainer">
+                <hr/>
+                <div class="container">
+                    <label for="uname"><strong>Amount</strong></label>
+                    <input id="deposit" type="text" placeholder="Enter deposit amount" name="deposit">
+                </div>
+                <button type="submit" onclick="getDeposit();">Deposit</button>
+                <button type="submit" onclick="getBalance();">Balance</button>
+            </div>
+        </form>
+    </div>
+    <div class="space"></div>
     <footer class="footer">
         <ul class="footer__nav">
             <li class="nav__item">

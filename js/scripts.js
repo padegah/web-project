@@ -1,16 +1,3 @@
-/*
-location behaviour starts here
-*/
-let dropdownBtn = document.querySelector('.menu-btn');
-let menuContent = document.querySelector('.menu-content');
-
-dropdownBtn.addEventListener('click',()=>{
-   if(menuContent.style.display===""){
-      menuContent.style.display="block";
-   } else {
-      menuContent.style.display="";
-   }
-})
 
 /*
 slide behaviour starts here
@@ -48,3 +35,32 @@ function navFunc() {
 /*
 nav bar behaviour ends
 */
+
+/*
+e-banking
+*/
+
+function getDeposit() {
+  var cur_balance = 1800;
+  var deposit = document.getElementById("deposit").value;
+
+  if (isNaN(deposit))
+  {
+      alert("Please input valid amount");
+      return false;
+  }
+
+  if(deposit == ""){
+     alert("Amount field is empty, please enter an amount to deposit.")
+     return false;
+  }
+  
+  var new_balance = Number(deposit) + cur_balance;
+  alert("Deposit successful. Your new balance is GHC " + new_balance);
+
+}
+
+function getBalance() {
+  var cur_balance = 1800;
+  alert("Your current balance is GHC " + cur_balance);
+}
