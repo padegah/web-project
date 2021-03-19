@@ -14,7 +14,7 @@ function carousel() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 2000);
+  setTimeout(carousel, 3000);
 }
 /*
 slide behaviour ends here
