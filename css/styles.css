@@ -85,34 +85,6 @@ nav styling starts
     display: none;
 }
   
-@media screen and (max-width: 767px) {
-    .topnav a:not(:last-child) {
-        display: none;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-  
-@media screen and (max-width: 767px) {
-    .topnav.responsive {
-        position: relative;
-    }
-    
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}  
 /*
 nav styling ends
 */
@@ -150,12 +122,6 @@ styling for info begins here
     flex-direction: row;
     gap: 20px;
     text-align: justify;
-}
-
-@media screen and (max-width: 767px) {
-    .info, .info1 {
-        flex-wrap: wrap;
-    }
 }
 
 .space{
@@ -338,30 +304,6 @@ Styling for footer begins here
     color: #2f2f2f;
 }
   
-@media screen and (min-width: 24.375em) {
-    .legal .legal__links {
-        margin-left: auto;
-    }
-}
-  
-@media screen and (min-width: 40.375em) {
-    .footer__nav > * {
-        flex: 1;
-    }
-    
-    .nav__item--extra {
-        flex-grow: 2;
-    }
-    
-    .footer__addr {
-        flex: 1 0px;
-    }
-    
-    .footer__nav {
-        flex: 2 0px;
-    }
-}
-
 
 .site-footer .social-icons a{
     width:40px;
@@ -377,21 +319,6 @@ Styling for footer begins here
     margin:0
 }
 
-@media (max-width:991px){
-    .site-footer [class^=col-]{
-        margin-bottom:30px
-    }
-}
-
-@media (max-width:767px){
-    .site-footer{
-        padding-bottom:0
-    }
-
-    .site-footer .copyright-text,.site-footer .social-icons{
-        text-align:center
-    }
-}
 
 .social-icons{
     padding-left:0;
@@ -456,14 +383,6 @@ Styling for footer begins here
     background-color:#ea4c89
 }
 
-@media (max-width:767px){
-    .social-icons li.title{
-        display:block;
-        margin-right:0;
-        font-weight:600
-    }
-}
-
 
 /**/
 .footer .social-icons a{
@@ -474,21 +393,6 @@ Styling for footer begins here
     margin-right:0;
     border-radius:100%;
     background-color:#33353d
-}
-
-@media (max-width:991px){
-    .footer [class^=col-]{
-        margin-bottom:30px
-    }
-}
-
-@media (max-width:767px){
-    .footer{
-        padding-bottom:0
-    }
-    .footer .copyright-text,.footer .social-icons{
-        text-align:center
-    }
 }
 
 .social-icons{
@@ -558,14 +462,6 @@ Styling for footer begins here
     background-color:#bb0000
 }
 
-@media (max-width:767px){
-    .social-icons li.title{
-        display:block;
-        margin-right:0;
-        font-weight:600
-    }
-}
-
 /*
 Styling for footer ends here
 */
@@ -588,7 +484,7 @@ contact styling
 
 .branch{
     color: #101542;
-    text-indent: 50px;
+    text-indent: 20px;
     height: 40px;
     font-weight: bold;
 }
@@ -597,7 +493,7 @@ contact styling
 Styling for about
 */
 
-.about{
+.about, .product{
     margin: 0 auto;
     text-align: left;
     width: 90%;
@@ -679,10 +575,156 @@ span.psw{
     padding-right: 15px;
 }
 
+
+/*
+Styling for products and services
+*/
+.pdt{
+    width: 170px;
+    background-color: #f3b008;
+    padding: 10px;
+    color: #101542;
+    font-weight: bold;
+    left: 72px;
+    position:relative;
+}
+
+.pdt1{
+    width: 170px;
+    background-color: #101542;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    left: 72px;
+    position:relative;
+}
+
+
+/*
+responsiveness
+media queries
+*/
+
+
+@media screen and (max-width: 767px) {
+    .topnav a:not(:last-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+  
+@media screen and (max-width: 767px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}  
+
+
+
+@media screen and (max-width: 767px) {
+    .info, .info1 {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+        margin-left: auto;
+    }
+}
+  
+@media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+        flex: 1;
+    }
+    
+    .nav__item--extra {
+        flex-grow: 2;
+    }
+    
+    .footer__addr {
+        flex: 1 0px;
+    }
+    
+    .footer__nav {
+        flex: 2 0px;
+    }
+}
+
+
+
+@media (max-width:991px){
+    .site-footer [class^=col-]{
+        margin-bottom:30px
+    }
+}
+
+@media (max-width:767px){
+    .site-footer{
+        padding-bottom:0
+    }
+
+    .site-footer .copyright-text,.site-footer .social-icons{
+        text-align:center
+    }
+}
+
 /* Change styles for span on extra small screens */
 @media screen and (max-width: 300px){
     span.psw{
         display: block;
         float: none;
+    }
+}
+
+
+
+@media (max-width:767px){
+    .social-icons li.title{
+        display:block;
+        margin-right:0;
+        font-weight:600
+    }
+}
+
+@media (max-width:991px){
+    .footer [class^=col-]{
+        margin-bottom:30px
+    }
+}
+
+@media (max-width:767px){
+    .footer{
+        padding-bottom:0
+    }
+    .footer .copyright-text,.footer .social-icons{
+        text-align:center
+    }
+}
+
+
+@media (max-width:767px){
+    .social-icons li.title{
+        display:block;
+        margin-right:0;
+        font-weight:600
     }
 }

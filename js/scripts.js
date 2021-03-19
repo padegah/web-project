@@ -54,6 +54,11 @@ function getDeposit() {
      alert("Amount field is empty, please enter an amount.")
      return false;
   }
+
+  if(deposit < 0){
+     alert("Deposit amount cannot be less than 0. Please try again.")
+     return false;
+  }
   
   var new_balance = Number(deposit) + cur_balance;
   alert("Deposit successful. Your new balance is GHC " + new_balance);
