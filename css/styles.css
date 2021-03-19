@@ -1,4 +1,5 @@
 body{
+    /*font-family: 'Didact Gothic';*/
     font-family: 'Didact Gothic';
     margin:0;
     padding:0;
@@ -158,6 +159,7 @@ styling for info begins here
 }
 
 .space{
+    color: #171e5a;
     height: 50px;
     font-weight: bold;
     text-align: left;
@@ -165,25 +167,17 @@ styling for info begins here
 }
 
 .space1{
+    color: #171e5a;
     height: 50px;
     font-weight: bold;
     text-align: center;
     font-size: 20px;
 }
 
-/*.segment{
-    display: inline-block;
-    align-content: center;
-    height: 80%; 
-    width: 80%; 
-    top: 10%;
-    left: 10%;
-    border: 1px solid red;
+.info_image{
+    width: 280px;
+    height: 201px;
 }
-
-.info{
-    text-align: center;
-}*/
 
 /*
 styling for info ends here
@@ -577,6 +571,7 @@ contact styling
 */
 
 .segment, .locate, .board, .mng{
+    padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
@@ -588,6 +583,7 @@ contact styling
 }
 
 .branch{
+    color: #101542;
     text-indent: 50px;
     height: 40px;
     font-weight: bold;
@@ -603,6 +599,7 @@ Styling for about
     width: 90%;
 }
 
+
 .abt{
     text-align: justify;
 }
@@ -613,6 +610,11 @@ Styling for about
 
 .board, .mng{
     text-align: center;
+}
+
+.head{
+    color: #101542;
+    font-weight: bold;
 }
 
 

@@ -51,7 +51,7 @@ function getDeposit() {
   }
 
   if(deposit == ""){
-     alert("Amount field is empty, please enter an amount to deposit.")
+     alert("Amount field is empty, please enter an amount.")
      return false;
   }
   
